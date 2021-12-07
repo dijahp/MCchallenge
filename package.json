@@ -1,0 +1,18 @@
+{
+  "name": "testcafeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests/forgotten-pw.test.js -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone 11 ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests"
+  },
+  "author": "Khadijah Parks",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.17.1"
+  }
+}
