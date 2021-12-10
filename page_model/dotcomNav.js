@@ -3,10 +3,7 @@ import { Selector, t } from 'testcafe';
 class dotcomNav {
   constructor() {
     this.ourStoryBtn = Selector('li a').withAttribute('href', '/about/');
-    this.learnCoFoundersBtn = Selector('a').withAttribute(
-      'href',
-      '/about/founders',
-    );
+    this.learnCoFoundersBtn = Selector('p a').withText("Learn more about our Co-founders.")
   }
 
   async navigateToLeadershipPage() {
