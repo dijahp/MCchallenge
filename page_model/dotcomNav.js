@@ -2,7 +2,7 @@ import { Selector, t } from 'testcafe';
 
 class dotcomNav {
   constructor() {
-    this.ourStoryBtn = Selector('li a').withAttribute('href', '/about/');
+    this.ourStoryBtn = Selector('li a').withText("Our Story");
     this.learnCoFoundersBtn = Selector('p a').withText("Learn more about our Co-founders.")
   }
 
